@@ -1,87 +1,16 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=10">
-	<title>Your title</title>    
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="content-wrapper">
-		<header class="header">
-			<div class="menuTop">
-				<div class="menuTopcont">Меню 1
-					<div class="subMenu">
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-					</div>
-				</div>
-				<div class="menuTopcont">Меню 2
-					<div class="subMenu">
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-					</div>
-				</div>
-				<div class="menuTopcont">Меню 3
-					<div class="subMenu">
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-					</div>
-				</div>
-				<div class="menuTopcont">Меню 4 
-					<div class="subMenu">
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-						<div> <a href=""> ссылка картинка</a> </div>
-					</div>
+		<!-- mobile gamburger  start -->
+			<div class="gamburger" style="left: 50px">
+				<input id="gamburgerChange" type="checkbox" style="display: none;">
+				<label class="menu_btn" for="gamburgerChange">
+					<hr style="background-color: white; width: 30px; height: 2px;border: none;">
+					<hr style="background-color: white; width: 30px; height: 2px;border: none;">
+					<hr style="background-color: white; width: 30px; height: 2px;border: none;">
+				</label>
+
+				<div class="MainMenu">
+					<div> <a href=""> ссылка картинка</a> </div>
+					<div> <a href=""> ссылка картинка</a> </div>
+					<div> <a href=""> ссылка картинка</a> </div>
 				</div>
 			</div>
-		</header>
-
-
-		<div class="container clearfix">
-			<main class="content">
-				
-				<table>	
-					<tr id="tab1"> <th>Устройство</th></tr> 
-					<tr id="tab2"> <td>....</td></tr> 
-				</table>
-
-				<div id="block1" class="blockdiv">
-					<p>ссылка 1</p>
-					<p>ссылка 2</p>
-				</div>
-				<button id="butt1"> Меню</button>
-
-			</main>
-		</div>
-
-		<footer class="footer">
-			<p style="font-size: 30px; margin: 0; padding: 10px;">Footer</p>
-		</footer>
-	</div>  
-</body>
-</html>
-
-<script type="text/javascript">
-	let tab1Width = document.getElementById("tab2");
-	let block1Width = document.getElementById("block1");
-
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent)) {
-		tab1Width.innerHTML ="mobile";
-		tab1Width.style.color = "green";
-		block1Width.style.width = 200 +"px";
-		block1Width.style.background = "yellow";
-	} else {
-		tab1Width.innerHTML ="Компьютер";
-		tab1Width.style.color = "red";
-		block1Width.style.width = 400 +"px";
-		block1Width.style.background = "black";
-	}
-
-
-</script>
-
+			<!-- mobile gamburger  end -->
