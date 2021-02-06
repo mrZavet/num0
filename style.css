@@ -1,0 +1,94 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display:block;
+    clear: both;
+}
+
+html {
+    min-width: 400px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+.header {
+    height: 100px;
+    background: #6CAEDD;
+    color: #fff;
+}
+
+.footer {
+    height: 100px;
+    background: #364850;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 2000px;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+
+.content {
+    width: 100%;
+}
+
+
+.blockdiv{
+    width: 400px;
+    background: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+
+.menuTop{
+    display: block;
+    display: flex;
+    color: white;
+    font-size: 24px;
+}
+
+.menuTopcont{
+  margin: 0 auto;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subMenu{
+    display: none;
+    padding: 10px;
+}
+
+.menuTopcont:hover .subMenu{
+  position: absolute;
+  display: block;
+}
+
